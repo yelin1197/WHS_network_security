@@ -93,7 +93,7 @@ int main() {
     bpf_u_int32 net;
 
     // 네트워크 디바이스 열기 (필요에 따라 "enp0s3"을 다른 NIC 이름으로 변경)
-    handle = pcap_open_live("enp0s3", BUFSIZ, 1, 1000, errbuf);
+    handle = pcap_open_live("enp0s8", BUFSIZ, 1, 1000, errbuf);
     if (handle == NULL) {
         fprintf(stderr, "Couldn't open device: %s\n", errbuf);
         return 2;
